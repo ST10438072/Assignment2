@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalScore">
+
+
+    <TextView
+        android:id="@+id/resttext"
+        android:layout_width="317dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoretext"
+        android:layout_width="305dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="55dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resttext" />
+
+    <Button
+        android:id="@+id/revbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="46dp"
+        android:text="Review"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoretext" />
+
+    <Button
+        android:id="@+id/exitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="46dp"
+        android:text="Exit"
+        app:layout_constraintStart_toEndOf="@+id/revbutton"
+        app:layout_constraintTop_toBottomOf="@+id/scoretext" />
+
+    <TextView
+        android:id="@+id/reviewtex"
+        android:layout_width="341dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="39dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
